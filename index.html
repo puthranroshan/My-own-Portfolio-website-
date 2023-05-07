@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Puthran Roshan Ravi</title>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://kit.fontawesome.com/c2001db7f8.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+
+    <!-- -----------home section-------------- -->
+
+    <div id="header">
+            <div class="container">
+                <nav>
+                    <h1 id="home-id">Home</h1>
+                    <!-- <li id="home-id"><a href="#">Home</a></li> -->
+                    <ul>
+                        <!-- nan yella href hatra hash ootig yella id hesr hakte bcz nang al click madr mel nan secific pages
+                        display aik -->
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="header-text"> 
+                    <h1>Hello  </h1>
+                     <h2>I'm <span>Puthran Roshan</span>  From Kundapura</h2>
+                    <p> <i class="fa-sharp fa-solid fa-code"></i>Software Developer,Dancer </p>
+                </div>
+                
+            </div>
+    </div>
+
+    <!-- -----------about section------------- -->
+
+   <div id="about">
+       <div class="rows">
+        <div class="about-col-1">
+            <img src="roshan2.jpg"  alt="">
+        </div>
+        <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>I'm currently persuing my 3rd year Bachelor of Engineering in Nitte Meenakshi Institute of Technology,I'm an innovative and dedicated Software Developer and a creative Dancer who has represented his collage in various state and National level competition.
+                 </p>
+                  <div class="tab-title">
+                    <!-- ondh class oolag inodh hakde bcz active link na specify maduk -->
+                          <p class="tab-links  active-link" onclick="opentab('skills')"> Skills </p>
+                          <p class="tab-links" onclick="opentab('experiance')"> Experiance  </p>
+                          <p class="tab-links" onclick="opentab('education')"> Education </p>
+                  </div>
+                  <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Programming languages</span>
+                            <br>Advance C++
+                            <br>Intermediate Java
+                            <br>Familiar Python
+                            </li>
+                        <li><span>Web Development</span><br>HTML <br>  CSS <br> JavaScript</li>
+                        <li><span>Machine Learning</span><br>Python <br> Pandas <br>Numpy </li>
+                        
+                    </ul>
+                  </div>
+                  <div class="tab-contents" id="experiance">
+                    <ul>
+                        <li><span>KPMG</span><br><h3>Data Analytics Consulting Intern </h3> -->Done data visualization through Tableau software by using <br> a
+                            variety of chart types, including bar charts, <br> line charts, scatter
+                            plots, and maps.</li>
+                        <li><span>Dolphin Soft's</span><br> <h3>Software Developer Intern </h3>-->Instructed about various web development tools, <br> Software de-
+                            velopment methodologies, and <br> even problem-solving skills  by
+                            learning <br> to troubleshoot, debug, and solve complex program-
+                            ming problems.</li>
+                    </ul>
+                  </div>
+                  <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>Nitte Meenakshi Institute Of Technology</span>
+                            <br>2020-2024
+                            <br>Information Science And Engineering CGPA-7.7</li>
+                        <li><span>RNS PU College Kundapura</span>
+                            <br>2018-2020
+                            <br>PCMB,cleared PUC with a score of 91%</li>
+                        <li><span>Sandeepan School Nagoor</span>
+                            <br>2008-2018
+                            <br>Cleared 10th with a score of 93%</li>
+                    </ul>
+                  </div>
+        </div>
+       </div>
+   </div>
+
+   <!-- ---------sevices section-------------  -->
+
+   <div id="services">
+    <div class="container" >
+       <h1 class="sub-title" id="heading">
+        My Services
+       </h1>
+       <div class="services-list">
+        <div>
+            <i class="fa-solid fa-code fa-fade"></i>
+            <h2>
+                Web Development
+            </h2>
+            <p>Development of static and dynamic website to world wide web using Html Css and JavaScript</p>
+                <a href="">Learn More</a>
+        </div>
+        <div>
+            <i class="fa-sharp fa-solid fa-crop fa-fade"></i>
+            <h2>
+                UI/UX Design
+            </h2>
+            <p>Design of a beautiful front-end a perticular  website or an application using various templates and Cascading Style Sheets</p>
+                <a href="">Learn More</a>
+        </div>
+        <div>
+            <i class="fa-solid fa-microchip fa-fade"></i>
+            <h2>
+                Machine Model Design
+            </h2>
+            <p>Designing various machine learning algorithms and models such as prediction models or Detection models</p>
+                <a href="">Learn More</a>
+        </div>
+
+       </div>
+    </div>
+   </div>
+
+   <!-- ---------Portfolio------------ -->
+
+   <div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title" id="heading2">
+            My Projects
+           </h1>
+           <div class="work-list">
+            <div class="work">
+                <img src="img3.jpg" alt="">
+                <div class="layer">
+                    <h3>House Price Prediction</h3>
+                    <p>
+                        prediction of price of a perticular House by using properties of a house such as number of rooms, location, age
+                        of the house etc.Through various models 
+                    </p>
+                    <a href="https://github.com/puthranroshan/House-prise-prediction" target="_blank"><i class="fa-brands fa-github fa-bounce" style="color: #111318;"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="img1.jpg" alt="">
+                <div class="layer">
+                    <h3>Real-time Chat Application</h3>
+                    <p>
+                        Real-time chat applications allow users to ex-
+                        change messages instantly, without the need
+                        for page refreshes or server requests, and es-
+                        tablish real-time connections between clients
+                        and servers
+                    </p>
+                 
+                    <a href="https://github.com/puthranroshan/Real-time-Chat-Application" target="_blank"><i class="fa-brands fa-github fa-bounce" style="color: #111318;"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="img2.jpg" alt="">
+                <div class="layer">
+                    <h3>Self Portfolio website </h3>
+                    <p>
+                       My own Porfolio website describes me and my services, Provides a brief information about my projects , and even a contact
+                       me section is provided such that any client can approch me for services
+                    </p>
+                    <a href=""><i class="fa-brands fa-github fa-bounce" style="color: #111318;"></i></a>
+                </div>
+            </div>
+           </div>
+          
+    </div>
+   </div>
+
+   <!-- ---------contact me----------- -->
+
+   <div id="contact">
+    <div class="container">
+        <div class="row" id="row-id">
+            <div class="contact-left" id="left-id">
+              <h1 class="sub-title">
+                Contact Me 
+              </h1>
+              <p><i class="fa-sharp fa-solid fa-paper-plane"></i>@1nt20is124.puthran@nmit.ac.in</p>
+              <div class="social-icons">
+                <a href="https://www.linkedin.com/in/puthran-roshan-ravi-puthran-421a77251" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://www.instagram.com/roshan_puthran_02/?hl=en" target="_blank"><i class="fa-brands fa-instagram"></i></a>  
+                <a href="https://github.com/puthranroshan" target="_blank"><i class="fa-brands fa-github"></i></a>
+              </div>
+              
+              <!-- yered class yak andre ondh universal buttons ge and inodh specific aai download button ge -->
+
+              <!-- nav nam resume indh path na kot download andh kottaga website indha nan resume na download madlak -->
+             <a href="puthran roshan resume final.pdf" download class="btn btn1" download>Download Resume</a>
+            </div>
+            <div class="contact-right" id="right-id">
+                <form name="submit-to-google-sheet">
+                 <input type="text" name="Name" placeholder="Your Name" required>
+                 <input type="text" name="Email" placeholder="Your Email" required>
+                 <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                 <button type="Submit" class="btn btn1">Submit</button>
+                </form>
+                <span id="msg"></span>
+             </div>
+             
+        </div>
+    </div>
+    <div class="copyright">
+        <p> copyright  <i class="fa-sharp fa-regular fa-copyright fa-xs"></i> Made By Puthran Roshan Ravi  <i class="fa-solid fa-hand-holding-heart fa-beat-fade" id="heart"></i></p>
+    </div>
+   </div>
+  
+
+   <!-- -----script for scroll reveal-------  -->
+
+   <script>
+    ScrollReveal().reveal(".container",{delay: 200, scale: 1.2 , reset: true,easing:"ease-out",interval :200})
+    ScrollReveal().reveal("#header",{delay: 200, scale: 1.2 , reset: true,easing:"ease-out",interval :200})
+    ScrollReveal().reveal(".rows",{delay: 200, scale: 1.2 , reset: true,easing:"ease-out",interval :200})
+   </script>
+
+   <script>
+     // nang first tab link mel click maddalik tab-content display aik so nan yeradu class na get madthe
+
+     var tablinks =document.getElementsByClassName("tab-links");
+     var tabcontents =document.getElementsByClassName("tab-contents");
+
+     function opentab(tabname){
+       for(tablink of tablinks){
+        tablink.classList.remove("active-link");
+       }
+       for(tabcontent of tabcontents){
+        tabcontent.classList.remove("active-tab");
+       }
+       //ist madadrinda yenta aath andre namg skill mel already display aatirath ala result 
+       //aa details nan vapas click maddaga dissapper aath and blue line kuda hoth
+       //nam active link math active content idad remove aath
+
+
+      // iga nav next yenta madk andre yel click madatho al line bark math content display aik
+
+      event.currentTarget.classList.add("active-link");
+      //nan activelink indh styling madide so idhrinda adh line batat;
+
+      document.getElementById(tabname).classList.add("active-tab");
+      //tabname yak andre nav iga mele opentab al experiance click madth andre adh experiance na idh aagi taknd display madath
+
+     }
+   </script>
+   <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwrvBdn3W5LzKYngPwuN5ewYgUcWadftNexdw47zx06D61hTDHfaM2IdqRekeZLHURdtw/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg=document.getElementById("msg");
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML="Message has been sent"
+            // e msg pade pade display aatirath iga so nan time out add madk
+            setTimeout(function(){
+                msg.innerHTML=""
+            },5000)
+            //iga 5 sec aarmel form reset aath
+            form.reset();
+
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>

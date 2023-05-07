@@ -1,0 +1,433 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background: black;
+    color: white;
+}
+html.sr.container{
+    visibility: hidden;
+}
+#header{
+    width: 100%;
+    height: 100vh;
+    background-image: url(roshan3.jpg);
+    background-size: 800px;
+    background-repeat: no-repeat;
+    background-position: 760px -25px;
+}
+
+.container{
+    padding: 10px,10%;
+    margin: 30px 40px;
+}
+nav {
+    display: flex;
+    float: right;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 45px;
+}
+nav ul li a{
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+    position: relative;
+}
+#home-id{
+    float: left;
+    padding-right: 714px;
+    margin-top: 23px;
+    color: aqua;
+    font-size: 26px;
+
+}
+
+/* idhrinda line display aath home adrr mel yella */
+/*first width 100% iddalik yelladrallu batidith line kadik namg bari nav yavdrmel cursor idath adrr mele bark andre width zero
+madk*/
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height:3px;
+    background: rgb(0, 191, 255);
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+
+}
+/* iga cursor mel click madad mel bapud line*/
+/* mathe mel transition add madk*/
+nav ul li a:hover::after{
+  width: 100%;
+}
+
+.header-text{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border-color:solid rgb(197, 70, 70);
+    padding: 218px 45px;
+    font-size: 25px;
+    
+}
+.header-text h2 span{
+    color: aqua;
+}
+
+.rows{
+    
+    padding: 39px 79px;
+    display: flex;
+    margin: 86px 8px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.about-col-1{
+    flex-basis: 35%;
+}
+
+.about-col-1 img{
+    width: 100%;
+    /* width: 600px; */
+    /* height: 602px; */
+    border-radius: 40px;
+}
+
+
+.about-col-2{
+ flex-basis: 60%;
+}
+/* font weight is used to bold the font */
+.sub-title{
+    font-size: 40px;
+    font-weight: 600;
+    color: aqua;
+}
+
+.tab-title{
+    display: flex;
+    margin: 32px -33px;
+}
+
+.tab-links{
+    font-size: 26px;
+    color: white;
+    margin: 19px 34px;
+    cursor: pointer;
+    position: relative;
+    font-weight: 450;
+}
+
+.tab-links::after{
+   content: '';
+   width: 0%;
+   height:5px;
+   left: 0;
+   bottom: -8px;
+   background: aqua;
+   position: absolute;
+   transition: 0.5s;
+}
+
+/* tav-links mathe active-link madya space irbard */
+.tab-links.active-link::after{
+  width: 80%;
+}
+.tab-contents ul li{
+  list-style: none;
+  margin: 10px 0;
+  font-size: 15px;
+}
+
+.tab-contents ul li span{
+    color: aqua;
+    font-size: 17px;
+}
+.tab-contents ul li h3{
+    color: #eda3b8;
+}
+.tab-contents{
+    display: none;
+}
+.tab-contents.active-tab{
+    display: block;
+}
+
+/* ------services section------- */
+#services{
+   
+    padding: 42px 0px;
+}
+#heading{
+    margin: -4px 51px;
+}
+.services-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-right: 56px;
+}
+
+.services-list div{
+    background: #262626;
+    padding: 40px;
+    font-size: 13px;
+    font-weight: 300;
+    border-radius: 10px;
+    transition: background 0.5s,transform 0.5s;
+}
+.services-list div i{
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+.services-list div h2{
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+.services-list div a{
+    font-size:12px;
+    text-decoration: none;
+    color: rgb(240, 235, 235);
+    margin-top: 20px;
+    display: inline-block;
+
+}
+.services-list div:hover{
+       
+    background: rgb(123, 239, 239);
+    transform: translateY(-10px);
+}
+  /* ---------portfolio section---------- */
+#portfolio{
+    margin-top: 180px;
+    padding-top: 20px;
+}
+#heading2{
+    margin: 6px 49px;
+}
+.work-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-right: 56px;
+}
+.work-list div img{
+    width: 418px;
+    height: 338px;
+    border-radius: 10px;
+}
+.work{
+border-radius: 10px;
+position: relative;
+overflow: hidden;
+}
+.work img{
+    transition: transform 0.5s;
+}
+/* .work div h3{
+    color: aqua ;
+    padding: 4px 98px;
+}
+.work div a{
+    padding-left: 173px;
+    color:greenyellow;
+} */
+.layer{
+    width: 100%;
+    height: 0%;
+    background: linear-gradient(rgba(0,0,0,0.6),rgb(147, 238, 238));
+    border-radius: 10px;
+    /* position absolute yak andre nam text yella photo mel bark so */
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    /* namg yella bardad center ig bark */
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0,40px;
+    text-align: center;
+    font-size: 14px;
+    transition: height 0.5s;
+}
+.layer h3{
+    font-weight: 500;
+    margin-bottom: 10px;
+    font-size: large;
+}
+
+.layer a{
+    margin-top: 20px;
+    text-decoration: none;
+    font-size: 46px;
+    line-height: 60px;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+   
+}
+/* 
+iga yella projects allu color batirath so nan height an 100% indha 0 madi next cursor adr mel hormel color bapang madk 
+so work ig hover effect add madthe */
+
+/* hover image bari image na zoom maduk */
+.work:hover img{
+    /* iga yenta aik andre nan image mel cursor taknd hodalik image mundh bark andre zoom aik  */
+
+/* so el transform use madi work.img al trasition transfrom(0.5 seconds ig madk) */
+
+    transform: scale(1.1);
+}
+.work:hover .layer{
+    /* iga el height 100 madi layer ig hoi transition kodk 0.5 sec */
+   height: 100%;
+}
+
+/* ----------contact -------- */
+#contact{
+    margin-top: 220px;
+}
+
+#left-id{
+    margin-left: 46px;
+}
+
+#right-id{
+    float: right;
+    padding-left: 181px;
+}
+#row-id{
+    display: flex;
+}
+.contact-left p{
+    margin-top: 30px;
+}
+.contact-left p i{
+    color: aqua;
+    margin-right: 15px;
+    font-size: 25px;
+}
+
+.social-icons{
+ margin-top: 30px;
+}
+
+.social-icons a{
+    color: #ababab;
+    font-size: 30px;
+    text-decoration: none;
+    margin-right: 15px;
+    display: inline-block;
+    transition: transform 0.5s;
+
+}
+/* iga yenta aik andre nav icons mele cursor taknd hodange adrr color change aik */
+.social-icons a:hover {
+color: aqua;
+   /* ning move yella madk andre tranform use madk 
+   so el nav icon na move madth */
+   /* nav mel move madk so y axis indha -5 */
+   transform: translateY(-5px);
+   /* kadik mel hoi transition hakak */
+}
+/* 
+first nan universally yella buttons ig design kodthe aamel specific aai download button ig kodthe */
+.btn{
+    display: block;
+    margin: 50px auto;
+    width: fit-content;
+    border: 1px solid aqua;
+    padding: 14px 50px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: rgb(5, 5, 5);
+}
+.btn.btn1{
+    display: inline-block;
+    background: aqua;
+}
+.contact-right form{
+    width: 100%;
+}
+
+/* nan form input and form textarea yeradakku vatige add madte css */
+
+form input,form textarea{
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: #262626;
+    padding: 15px;
+    margin: 15px 0;
+    color: white;
+    font-size: 18px;
+    border-radius: 6px;
+}
+form .btn1{
+    padding: 14px 60px;
+    font-size: 18px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+.copyright{
+    width: 100%;
+    text-align: center;
+    background-color: #262626;
+    font-size: 27px;
+    font-weight: 300;
+    margin-top: 17px;
+
+}
+#heart{
+    color: red;
+    padding-left: 5px;
+}
+
+/* nang iga nan about  mel click maddaga a page ig hoik math portfolio mel click maddalikaa page ig hoik */
+html{
+    /* idh madrr kudle alig hoi bidath */
+    scroll-behavior: smooth;
+}
+
+/* iga submit button click madrr mel msg display aik  */
+
+#msg{
+    font-weight: 300;
+    display: block;
+    margin-top: -40px;
+}
+
+.span-i{
+    color: #262626;
+}
+
+/* iga website nan nav resposive maduk css media queries na use madath */
+/* nav el yenella css property apply madath adh mbl screen ig matra limited aagi irath */
+/* @media only screen and (max-width:600px){
+    #header{
+        background-image: url(roshan3.jpg);
+    }
+    .header-text{
+        margin-top: 100%;
+        font-size: 16px;
+    }
+    .header-text h1{
+        font-size: 30px;
+    }
+} */
